@@ -17,7 +17,7 @@ public class Producer {
 
   public void sendMessage(String message) {
     logger.info(String.format("#### -> Producing message -> %s", message));
-    message += "   CI/CD WORKS##";
+    message += "   Finished CI/CD workflow (:";
     this.kafkaTemplate.send(TOPIC, message);
   }
 }
